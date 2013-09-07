@@ -29,9 +29,10 @@ CSV.foreach("/Users/douggerber/Dropbox/work/masshealth/db/data.csv", headers: tr
 	    teen_birth_rate: row[14].gsub(/\,/,"").gsub(/\$/,"")
 		}
 
-		if TownHealthRecord.where(health_record).empty?
-			TownHealthRecord.create(health_record)
-		end
+	end
+
+	if TownHealthRecord.where(health_record).empty?
+		TownHealthRecord.create(health_record)
 	end
 end
 
