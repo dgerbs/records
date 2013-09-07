@@ -8,7 +8,7 @@
 
 require 'csv'
 
-CSV.foreach("/Users/douggerber/Dropbox/work/masshealth/db/data.csv"), headers: true do |row|
+CSV.foreach("/Users/douggerber/Dropbox/work/masshealth/db/data.csv", headers: true) do |row|
 	health_record = {
 		name: row[0], 
     population: row[1],
