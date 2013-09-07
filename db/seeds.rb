@@ -9,8 +9,7 @@
 require 'csv'
 
 CSV.foreach("/Users/douggerber/Dropbox/work/masshealth/db/data.csv", headers: true) do |row|
-	
-	if row.length == 14
+
 		health_record = {
 			name: row[0], 
 	    population: row[1].gsub(/\,/,"").gsub(/\$/,""),
@@ -28,8 +27,6 @@ CSV.foreach("/Users/douggerber/Dropbox/work/masshealth/db/data.csv", headers: tr
 	    publicly_financed_prenatal_care_rate: row[13].gsub(/\,/,"").gsub(/\$/,""),
 	    teen_birth_rate: row[14].gsub(/\,/,"").gsub(/\$/,"")
 		}
-
-	end
 
 	if TownHealthRecord.where(health_record).empty?
 		TownHealthRecord.create(health_record)
