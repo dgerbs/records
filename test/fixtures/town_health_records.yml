@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  population: 1
+  aged_zero_to_nineteen: 1
+  aged_sixtyfive_plus: 1
+  per_capita_income: 1
+  persons_below_poverty: 1
+  persons_below_poverty_rate: 1.5
+  adequate_prenatal_care_rate: 1.5
+  c_section_delivery_rate: 1.5
+  infant_deaths: 1
+  infant_mortality_rate: 1.5
+  low_birthweight_rate: 1.5
+  multiple_birth_rate: 1.5
+  publicly_financed_prenatal_care_rate: 1.5
+  teen_birth_rate: 1.5
+
+two:
+  name: MyString
+  population: 1
+  aged_zero_to_nineteen: 1
+  aged_sixtyfive_plus: 1
+  per_capita_income: 1
+  persons_below_poverty: 1
+  persons_below_poverty_rate: 1.5
+  adequate_prenatal_care_rate: 1.5
+  c_section_delivery_rate: 1.5
+  infant_deaths: 1
+  infant_mortality_rate: 1.5
+  low_birthweight_rate: 1.5
+  multiple_birth_rate: 1.5
+  publicly_financed_prenatal_care_rate: 1.5
+  teen_birth_rate: 1.5
